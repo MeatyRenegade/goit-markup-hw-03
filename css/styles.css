@@ -1,3 +1,14 @@
+:root {
+  --main-text-color: #757575;
+  --header-color: #212121;
+  --hover-color: #2196f3;
+  --hero-backg-cl: #2f303a;
+  --fill-in-color: #ffffff;
+  --opacity-color: rgba(255, 255, 255, 0.6);
+  --wwd-backgr: #f5f4fa;
+  --features-color: #e5e5e5;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -21,17 +32,6 @@ img {
   height: auto;
 }
 
-:root {
-  --main-text-color: #757575;
-  --header-color: #212121;
-  --hover-color: #2196f3;
-  --hero-backg-cl: #2f303a;
-  --fill-in-color: #ffffff;
-  --opacity-color: rgba(255, 255, 255, 0.6);
-  --wwd-backgr: #f5f4fa;
-  --features-color: #e5e5e5;
-}
-
 body {
   font-family: "Roboto", "sans-serif";
   font-style: normal;
@@ -41,6 +41,14 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .link {
@@ -81,13 +89,8 @@ body {
   color: var(--fill-in-color);
 }
 
-.no-dots {
+.list {
   list-style: none;
-  margin-bottom: 94px;
-}
-
-.no-dots li {
-  display: inline-block;
 }
 
 .web-logo {
@@ -108,6 +111,7 @@ body {
 }
 
 .topline-box {
+  height: 80px;
   background-color: var(--fill-in-color);
 }
 
@@ -157,8 +161,7 @@ body {
   border-radius: 4px;
   color: var(--fill-in-color);
   background-color: var(--hover-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .hero {
@@ -210,8 +213,7 @@ body {
   width: 270px;
   height: 368px;
   background: var(--fill-in-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -262,6 +264,15 @@ body {
   padding-left: 215px;
 }
 
+.main-nav {
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.main-nav :first-child {
+  margin-left: 215px;
+}
+
 .logo-box {
   padding-top: 60px;
   padding-left: 215px;
@@ -270,6 +281,11 @@ body {
 
 .map-link-box {
   margin-bottom: 9px;
+}
+
+.maillink-box-top {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .maillink-box {
@@ -282,4 +298,25 @@ body {
   padding-bottom: 280px;
   padding-left: 452px;
   text-align: center;
+}
+
+.features-box {
+  display: flex;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.list .filter-button:not(last-child) {
+  margin-right: 8px;
 }
