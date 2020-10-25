@@ -12,22 +12,20 @@
   <body>
     <!-- Верхняя линия -->
     <header>
-      <div class="container topline-box">
-        <nav class="main-nav">
+      <div class="container indextopline-box">
+        <nav class="logo-box-top">
           <a class="web-logo" href="./index.html"><span class="web-part">Web</span><span>Studio</span></a>
-          <ul class="list">
+          <ul class="list main-nav">
             <li><a class="link link-type list" href="./index.html">Студия</a></li>
             <li><a class="link link-type list" href="./portfolio.html">Портфолио</a></li>
             <li><a class="link link-type list" href="#Contacts">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list">
-          <li>
-            <div class="maillink-box-top">
-              <a class="link link-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </div>
+        <ul class="list info-box-top">
+          <li class="list link link-header">
+            <a class="link link-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li><a class="link link-header" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="list link link-header"><a class="link link-header" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
@@ -42,24 +40,30 @@
       <!-- Особенности -->
       <section class="features">
         <div class="container">
-          <ul class="list">
+          <ul class="featureslist">
             <li class="list">
-              <div class="features-box">
+              <div class="item">
                 <h3 class="feature-header">Внимание к деталям</h3>
                 <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
               </div>
             </li>
             <li class="list">
-              <h3 class="feature-header">Пунктуальность</h3>
-              <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+              <div class="item">
+                <h3 class="feature-header">Пунктуальность</h3>
+                <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+              </div>
             </li>
             <li class="list">
-              <h3 class="feature-header">Планирование</h3>
-              <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+              <div class="item">
+                <h3 class="feature-header">Планирование</h3>
+                <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+              </div>
             </li>
             <li class="list">
-              <h3 class="feature-header">Современные технологии</h3>
-              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <div class="item">
+                <h3 class="feature-header">Современные технологии</h3>
+                <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -69,13 +73,13 @@
         <div class="what-we-do">
           <h2 class="wwd-header">Чем мы занимаемся</h2>
           <ul class="list">
-            <li>
+            <li class="wwd-item">
               <img src="./img/img.jpg" width="370" height="294" alt="Разработка Вебсайтов" />
             </li>
-            <li>
+            <li class="wwd-item">
               <img src="./img/img1.jpg" width="370" height="294" alt="Мобильные приложения" />
             </li>
-            <li>
+            <li class="wwd-item">
               <img src="./img/img2.jpg" width="370" height="294" alt="Дизайн" />
             </li>
           </ul>
@@ -89,29 +93,37 @@
             <li>
               <div class="team-memb-box">
                 <img src="./img/team1.jpg" width="270" height="260" alt="Игорь Демьяненко Дизайнер по Продукту" />
-                <h3 class="team-memb-name">Игорь Демьяненко</h3>
-                <p class="team-memb-role">Product Designer</p>
+                <div class="tm-description">
+                  <h3 class="team-memb-name">Игорь Демьяненко</h3>
+                  <p class="team-memb-role">Product Designer</p>
+                </div>
               </div>
             </li>
             <li>
               <div class="team-memb-box">
                 <img src="./img/team2.jpg" width="270" height="260" alt="Ольга Репина Фронтэнд разработчек" />
-                <h3 class="team-memb-name">Ольга Репина</h3>
-                <p class="team-memb-role">Frontend Developer</p>
+                <div class="tm-description">
+                  <h3 class="team-memb-name">Ольга Репина</h3>
+                  <p class="team-memb-role">Frontend Developer</p>
+                </div>
               </div>
             </li>
             <li>
               <div class="team-memb-box">
                 <img src="./img/team3.jpg" width="270" height="260" alt="Николай Тарасов Маркетинг" />
-                <h3 class="team-memb-name">Николай Тарасов</h3>
-                <p class="team-memb-role">Marketing</p>
+                <div class="tm-description">
+                  <h3 class="team-memb-name">Николай Тарасов</h3>
+                  <p class="team-memb-role">Marketing</p>
+                </div>
               </div>
             </li>
             <li>
               <div class="team-memb-box">
                 <img src="./img/team4.jpg" width="270" height="260" alt="Михаил Ермаков Дизайнер ПИ" />
-                <h3 class="team-memb-name">Михаил Ермаков</h3>
-                <p class="team-memb-role">UI Designer</p>
+                <div class="tm-description">
+                  <h3 class="team-memb-name">Михаил Ермаков</h3>
+                  <p class="team-memb-role">UI Designer</p>
+                </div>
               </div>
             </li>
           </ul>
