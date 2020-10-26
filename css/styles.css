@@ -47,7 +47,9 @@ body {
 }
 
 .container {
-  width: 1600px;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -67,7 +69,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .link-header:last-child {
@@ -117,6 +119,7 @@ body {
 .indextopline-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 80px;
   background-color: var(--fill-in-color);
   border: 1px solid var(--fill-in-color);
@@ -125,6 +128,12 @@ body {
 .portfoliotopline-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.portfol-topl-backg {
+  width: 1600px;
   height: 80px;
   background-color: var(--fill-in-color);
   border: 1px solid #ececec;
@@ -132,7 +141,6 @@ body {
 
 .hero-header {
   width: 696px;
-  height: 120px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -175,6 +183,7 @@ body {
   padding-bottom: 6px;
   padding-left: 22px;
   margin-top: 100px;
+  margin-right: 8px;
 }
 
 .filter-button:hover {
@@ -185,17 +194,24 @@ body {
 }
 
 .hero {
-  width: 1600px;
-  height: 600px;
+  padding-top: 200px;
+  padding-right: 452px;
+  padding-bottom: 280px;
+  padding-left: 452px;
+  text-align: center;
   background-color: var(--hero-backg-cl);
 }
 
 .footer-bg {
+  padding-top: 60px;
+  padding-left: 215px;
+  padding-bottom: 60px;
   height: 252px;
   background-color: var(--hero-backg-cl);
 }
 
 .features {
+  padding-top: 94px;
   background-color: var(--fill-in-color);
 }
 
@@ -210,6 +226,7 @@ body {
 }
 
 .what-we-do {
+  padding-top: 94px;
   background-color: var(--fill-in-color);
 }
 
@@ -220,17 +237,23 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
   margin-bottom: 50px;
   color: var(--hero-backg-cl);
 }
 
 .wwd-item {
-  padding-right: 30px;
   margin-bottom: 94px;
 }
 
+.our-team {
+  padding-top: 94px;
+  padding-right: 215px;
+  padding-left: 215px;
+  height: 648px;
+}
+
 .our-team-bg {
+  width: 1600px;
   height: 648px;
   background-color: var(--wwd-backgr);
 }
@@ -241,6 +264,9 @@ body {
   background: var(--fill-in-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-memb-box:not(last-child) {
   margin-right: 30px;
 }
 
@@ -273,12 +299,9 @@ body {
 .ourworks-box {
   width: 370px;
   height: 404px;
-  left: 215px;
-  top: 696px;
   border: 1px solid var(--wwd-backgr);
   display: flex;
   flex-wrap: wrap;
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
@@ -289,37 +312,26 @@ body {
   color: var(--main-text-color);
 }
 
-.address-box {
-  padding-right: 1154px;
-  padding-bottom: 60px;
-  padding-left: 215px;
-}
-
 .main-nav {
   display: flex;
   align-items: flex-start;
 }
 
 .logo-box {
-  padding-top: 60px;
-  padding-left: 215px;
   margin-bottom: 20px;
 }
 
 .logo-box-top {
   margin-top: 24px;
   margin-bottom: 25px;
-  padding-left: 215px;
   display: flex;
   align-items: center;
 }
 
 .info-box-top {
   display: flex;
-  align-items: center;
   margin-top: 32px;
   margin-bottom: 32px;
-  padding-right: 215px;
 }
 
 .map-link-box {
@@ -330,38 +342,25 @@ body {
   margin-bottom: 9px;
 }
 
-.hero-main-text {
-  padding-top: 200px;
-  padding-right: 452px;
-  padding-bottom: 280px;
-  padding-left: 452px;
-  text-align: center;
-}
-
 .list {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   padding-left: 0;
+  margin: 0;
 }
 
 .featureslist {
   list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-right: 215px;
-  padding-left: 215px;
+  justify-content: space-between;
+  padding-left: 0;
 }
 
-.filter-button:not(last-child) {
-  margin-right: 8px;
-}
-
-.item {
-  padding-top: 94px;
-  padding-right: 30px;
+.item-p {
+  width: 270px;
+  height: 75px;
 }
 
 .tm-description {
@@ -369,17 +368,27 @@ body {
   margin-bottom: 30px;
 }
 
-.grid-list {
+.button-grid-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.grid-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 50px;
 }
 
 .grid-list-desc {
   margin-top: 20px;
   margin-right: 24px;
-
   margin-left: 24px;
   padding-bottom: 20px;
   font-size: 16px;
