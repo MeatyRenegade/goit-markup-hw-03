@@ -356,11 +356,16 @@ body {
   justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 .grid-section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.grid-list {
+  margin: 0;
 }
 
 .grid-list {
