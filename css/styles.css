@@ -36,7 +36,6 @@ img {
 body {
   font-family: "Roboto", "sans-serif";
   font-style: normal;
-  width: 1600px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -116,31 +115,29 @@ body {
   color: var(--fill-in-color);
 }
 
-.indextopline-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  background-color: var(--fill-in-color);
-  border: 1px solid var(--fill-in-color);
-}
-
-.portfoliotopline-box {
+.header-topline-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
 }
 
-.portfol-topl-backg {
-  width: 1600px;
+.main-header {
   height: 80px;
   background-color: var(--fill-in-color);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--hero-backg-cl);
 }
 
 .hero-header {
-  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -156,7 +153,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   letter-spacing: 0.06em;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px var(--header-color);
@@ -193,20 +189,9 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.hero {
-  padding-top: 200px;
-  padding-right: 452px;
-  padding-bottom: 280px;
-  padding-left: 452px;
-  text-align: center;
-  background-color: var(--hero-backg-cl);
-}
-
 .footer-bg {
   padding-top: 60px;
-  padding-left: 215px;
   padding-bottom: 60px;
-  height: 252px;
   background-color: var(--hero-backg-cl);
 }
 
@@ -227,6 +212,7 @@ body {
 
 .what-we-do {
   padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--fill-in-color);
 }
 
@@ -241,20 +227,9 @@ body {
   color: var(--hero-backg-cl);
 }
 
-.wwd-item {
-  margin-bottom: 94px;
-}
-
 .our-team {
   padding-top: 94px;
-  padding-right: 215px;
-  padding-left: 215px;
-  height: 648px;
-}
-
-.our-team-bg {
-  width: 1600px;
-  height: 648px;
+  padding-bottom: 94px;
   background-color: var(--wwd-backgr);
 }
 
@@ -348,6 +323,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding-left: 0;
+  padding-bottom: 0;
   margin: 0;
 }
 
